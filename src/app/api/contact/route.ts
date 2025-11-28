@@ -89,7 +89,7 @@ export async function POST(request: NextRequest) {
     // Send confirmation email to user (if email provided)
     if (body.email) {
       const userConfirmationMail = {
-        from: 'sahay@aapkizameen.org',
+        from: process.env.SMTP_USER,
         to: body.email,
         subject: 'Thank you for your inquiry - AapkiZameen',
         html: `
@@ -129,6 +129,7 @@ export async function POST(request: NextRequest) {
               <p style="margin-bottom: 10px;"><strong>Contact Us:</strong></p>
               <p style="margin: 5px 0;">📞 +91 8319872570</p>
               <p style="margin: 5px 0;">✉️ sahay@aapkizameen.org</p>
+              <p style="margin: 5px 0;">📍 123 Business District, Mumbai 400001</p>
             </div>
 
             <div style="text-align: center; padding: 20px; border-top: 1px solid #eee; margin-top: 20px;">
@@ -140,11 +141,12 @@ export async function POST(request: NextRequest) {
         `,
       };
 
-      // Send confirmation email to user (don't fail the request if this fails)
+      // Send confirmation email to user (log error but don't fail the request)
       try {
         await transporter.sendMail(userConfirmationMail);
+        console.log('User confirmation email sent successfully to:', body.email);
       } catch (userEmailError) {
-        console.warn('Failed to send confirmation email to user:', userEmailError);
+        console.error('Failed to send confirmation email to user:', body.email, userEmailError);
         // Don't fail the request - owner email was already sent successfully
       }
     }
