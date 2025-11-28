@@ -13,6 +13,10 @@ interface ContactFormData {
   consent: boolean;
 }
 
+export async function GET() {
+  return NextResponse.json({ message: 'Contact API endpoint - POST method required' });
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body: ContactFormData = await request.json();
