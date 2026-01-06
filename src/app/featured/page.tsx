@@ -34,138 +34,138 @@ function FeaturedContent() {
   const itemsPerPage = 9;
 
   const landsData: LandProperty[] = [
-    // {
-    //   id: 1,
-    //   title: "Premium Agricultural Land - Ayodhya",
-    //   location: "Ayodhya",
-    //   category: "Agricultural",
-    //   price: "₹15,00,000",
-    //   priceValue: 1500000,
-    //   size: "2 Acres",
-    //   image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=500",
-    //   description: "Fertile agricultural land with excellent irrigation facilities. Perfect for farming or investment purposes."
-    // },
-    // {
-    //   id: 2,
-    //   title: "Residential Plot - Ayodhya",
-    //   location: "Ayodhya",
-    //   category: "Residential Plot",
-    //   price: "₹45,00,000",
-    //   priceValue: 4500000,
-    //   size: "500 sq yards",
-    //   image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=500",
-    //   description: "Prime residential plot in developing area with all modern amenities nearby."
-    // },
-    // {
-    //   id: 3,
-    //   title: "Commercial Land - Dholera",
-    //   location: "Dholera",
-    //   category: "Commercial",
-    //   price: "₹2,50,00,000",
-    //   priceValue: 25000000,
-    //   size: "1000 sq meters",
-    //   image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500",
-    //   description: "Strategic commercial property in prime Mumbai location with high footfall."
-    // },
-    // {
-    //   id: 4,
-    //   title: "Industrial Plot - Dholera",
-    //   location: "Dholera",
-    //   category: "Industrial",
-    //   price: "₹80,00,000",
-    //   priceValue: 8000000,
-    //   size: "5 Acres",
-    //   image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=500",
-    //   description: "Large industrial plot with easy access to highways and ports."
-    // },
-    // {
-    //   id: 5,
-    //   title: "Farmhouse Land - Ayodhya",
-    //   location: "Ayodhya",
-    //   category: "Farmhouse",
-    //   price: "₹35,00,000",
-    //   priceValue: 3500000,
-    //   size: "3 Acres",
-    //   image: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=500",
-    //   description: "Scenic farmhouse land with mountain views and natural water source."
-    // },
-    // {
-    //   id: 6,
-    //   title: "Investment Land - Dholera",
-    //   location: "Dholera",
-    //   category: "Investment",
-    //   price: "₹60,00,000",
-    //   priceValue: 6000000,
-    //   size: "1.5 Acres",
-    //   image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=500",
-    //   description: "High-growth potential investment property near IT corridor."
-    // },
-    // {
-    //   id: 7,
-    //   title: "Agricultural Land - Ayodhya",
-    //   location: "Ayodhya",
-    //   category: "Agricultural",
-    //   price: "₹12,00,000",
-    //   priceValue: 1200000,
-    //   size: "4 Acres",
-    //   image: "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=500",
-    //   description: "Productive agricultural land with tube well and electricity connection."
-    // },
-    // {
-    //   id: 8,
-    //   title: "Residential Plot - Dholera",
-    //   location: "Dholera",
-    //   category: "Residential Plot",
-    //   price: "₹28,00,000",
-    //   priceValue: 2800000,
-    //   size: "300 sq yards",
-    //   image: "https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=500",
-    //   description: "Well-located residential plot in gated community with modern infrastructure."
-    // },
-    // {
-    //   id: 9,
-    //   title: "Commercial Space - Dholera",
-    //   location: "Dholera",
-    //   category: "Commercial",
-    //   price: "₹1,80,00,000",
-    //   priceValue: 18000000,
-    //   size: "800 sq meters",
-    //   image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=500",
-    //   description: "Premium commercial property in central Delhi business district."
-    // },
-    // {
-    //   id: 10,
-    //   title: "Farmhouse Plot - Dholera",
-    //   location: "Dholera",
-    //   category: "Farmhouse",
-    //   price: "₹22,00,000",
-    //   priceValue: 2200000,
-    //   size: "2.5 Acres",
-    //   image: "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?w=500",
-    //   description: "Beautiful farmhouse plot surrounded by vineyards and orchards."
-    // },
-    // {
-    //   id: 11,
-    //   title: "Investment Plot - Ayodhya",
-    //   location: "Ayodhya",
-    //   category: "Investment",
-    //   price: "₹42,00,000",
-    //   priceValue: 4200000,
-    //   size: "1200 sq yards",
-    //   image: "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=500",
-    //   description: "Strategic investment property near upcoming metro station."
-    // },
-    // {
-    //   id: 12,
-    //   title: "Agricultural Land - Dholera",
-    //   location: "Dholera",
-    //   category: "Agricultural",
-    //   price: "₹8,00,000",
-    //   priceValue: 800000,
-    //   size: "6 Acres",
-    //   image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=500",
-    //   description: "Spacious agricultural land suitable for organic farming."
-    // }
+    {
+      id: 1,
+      title: "Premium Agricultural Land - Ayodhya",
+      location: "Ayodhya",
+      category: "Agricultural",
+      price: "₹15,00,000",
+      priceValue: 1500000,
+      size: "2 Acres",
+      image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=500",
+      description: "Fertile agricultural land with excellent irrigation facilities. Perfect for farming or investment purposes."
+    },
+    {
+      id: 2,
+      title: "Residential Plot - Ayodhya",
+      location: "Ayodhya",
+      category: "Residential Plot",
+      price: "₹45,00,000",
+      priceValue: 4500000,
+      size: "500 sq yards",
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=500",
+      description: "Prime residential plot in developing area with all modern amenities nearby."
+    },
+    {
+      id: 3,
+      title: "Commercial Land - Dholera",
+      location: "Dholera",
+      category: "Commercial",
+      price: "₹2,50,00,000",
+      priceValue: 25000000,
+      size: "1000 sq meters",
+      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500",
+      description: "Strategic commercial property in prime Mumbai location with high footfall."
+    },
+    {
+      id: 4,
+      title: "Industrial Plot - Dholera",
+      location: "Dholera",
+      category: "Industrial",
+      price: "₹80,00,000",
+      priceValue: 8000000,
+      size: "5 Acres",
+      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=500",
+      description: "Large industrial plot with easy access to highways and ports."
+    },
+    {
+      id: 5,
+      title: "Farmhouse Land - Ayodhya",
+      location: "Ayodhya",
+      category: "Farmhouse",
+      price: "₹35,00,000",
+      priceValue: 3500000,
+      size: "3 Acres",
+      image: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=500",
+      description: "Scenic farmhouse land with mountain views and natural water source."
+    },
+    {
+      id: 6,
+      title: "Investment Land - Dholera",
+      location: "Dholera",
+      category: "Investment",
+      price: "₹60,00,000",
+      priceValue: 6000000,
+      size: "1.5 Acres",
+      image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=500",
+      description: "High-growth potential investment property near IT corridor."
+    },
+    {
+      id: 7,
+      title: "Agricultural Land - Ayodhya",
+      location: "Ayodhya",
+      category: "Agricultural",
+      price: "₹12,00,000",
+      priceValue: 1200000,
+      size: "4 Acres",
+      image: "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=500",
+      description: "Productive agricultural land with tube well and electricity connection."
+    },
+    {
+      id: 8,
+      title: "Residential Plot - Dholera",
+      location: "Dholera",
+      category: "Residential Plot",
+      price: "₹28,00,000",
+      priceValue: 2800000,
+      size: "300 sq yards",
+      image: "https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=500",
+      description: "Well-located residential plot in gated community with modern infrastructure."
+    },
+    {
+      id: 9,
+      title: "Commercial Space - Dholera",
+      location: "Dholera",
+      category: "Commercial",
+      price: "₹1,80,00,000",
+      priceValue: 18000000,
+      size: "800 sq meters",
+      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=500",
+      description: "Premium commercial property in central Delhi business district."
+    },
+    {
+      id: 10,
+      title: "Farmhouse Plot - Dholera",
+      location: "Dholera",
+      category: "Farmhouse",
+      price: "₹22,00,000",
+      priceValue: 2200000,
+      size: "2.5 Acres",
+      image: "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?w=500",
+      description: "Beautiful farmhouse plot surrounded by vineyards and orchards."
+    },
+    {
+      id: 11,
+      title: "Investment Plot - Ayodhya",
+      location: "Ayodhya",
+      category: "Investment",
+      price: "₹42,00,000",
+      priceValue: 4200000,
+      size: "1200 sq yards",
+      image: "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=500",
+      description: "Strategic investment property near upcoming metro station."
+    },
+    {
+      id: 12,
+      title: "Agricultural Land - Dholera",
+      location: "Dholera",
+      category: "Agricultural",
+      price: "₹8,00,000",
+      priceValue: 800000,
+      size: "6 Acres",
+      image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=500",
+      description: "Spacious agricultural land suitable for organic farming."
+    }
   ];
 
   // Get unique locations and categories
